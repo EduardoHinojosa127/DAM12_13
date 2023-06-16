@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:laboratorio02/app/view/page1.dart';
 import 'package:laboratorio02/app/view/splash.dart';
+import 'package:laboratorio02/app/view/task_list.dart';
 import 'package:laboratorio02/main.dart';
 
 class MyApp extends StatelessWidget {
@@ -23,6 +25,6 @@ class MyApp extends StatelessWidget {
               ),
           useMaterial3: true,
         ),
-        home: SplashPage());
+        home: WelcomePage());
   }
 }
