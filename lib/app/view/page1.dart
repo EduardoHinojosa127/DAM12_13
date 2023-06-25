@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:laboratorio02/app/view/newpage.dart';
 import 'package:laboratorio02/app/view/task2.dart';
-import 'package:laboratorio02/app/view/task_list.dart';
+import 'package:laboratorio02/app/view/task_list/task_list_page.dart';
 
 void main() => runApp(WelcomePage());
 
@@ -41,6 +42,22 @@ class WelcomePage extends StatelessWidget {
                   },
                   child: const Text(
                     'Otra página',
+                    textAlign: TextAlign.center,
+                  ),
+                ),
+              ),
+              Padding(
+                padding: EdgeInsets.only(right: 10),
+                child: GestureDetector(
+                  onTap: () {
+                    Navigator.of(context).push(
+                      MaterialPageRoute(builder: (context) {
+                        return const InteractivePage();
+                      }),
+                    );
+                  },
+                  child: const Text(
+                    'Interactive Page',
                     textAlign: TextAlign.center,
                   ),
                 ),
